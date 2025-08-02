@@ -264,59 +264,58 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container mx-auto max-w-3xl text-center fade-in-on-scroll">
-                <div class="text-center mb-12">
-                    <span class="section-title-numeral text-2xl">IV.</span>
-                    <h2 class="section-title-main text-3xl sm:text-4xl mt-2">Contact</h2>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container mx-auto max-w-3xl text-center fade-in-on-scroll">
+        <div class="text-center mb-12">
+            <span class="section-title-numeral text-2xl">IV.</span>
+            <h2 class="section-title-main text-3xl sm:text-4xl mt-2">Contact</h2>
+        </div>
+        <p class="text-slate mb-12">Let's discuss how we can bring your vision to life.</p>
+        <form id="contact-form" action="https://formspree.io/f/mvojoqly" method="POST" class="w-full max-w-lg mx-auto">
+            <!-- Row 1: Full Name & Email Address (side by side on desktop, stacked on mobile) -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="full-name">Full Name</label>
+                    <input class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold" id="full-name" name="name" type="text" placeholder="Full Name" required>
                 </div>
-                <p class="text-slate mb-12">Let's discuss how we can bring your vision to life.</p>
-                <form id="contact-form" action="https://formspree.io/f/mvojoqly" method="POST" class="w-full max-w-lg mx-auto">
-                    <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="full-name">Full Name</label>
-                            <input class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold" id="full-name" name="name" type="text" placeholder="Jane Doe" required>
-                        </div>
-                        <div class="w-full md:w-1/2 px-3">
-                            <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="email">Email Address</label>
-                            <input class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold" id="email" name="email" type="email" placeholder="email@example.com" required>
-                        </div>
-
-
-                    <!-- Gemini AI Assistant -->
-                    <div class="flex flex-wrap -mx-3 mb-4">
-                        <div class="w-full px-3">
-                            <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="ai-keywords">
-                                ✨ AI Project Assistant
-                            </label>
-                            <div class="relative">
-                                <input class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold" id="ai-keywords" type="text" placeholder="Apne project ke keywords likhein...">
-                                <button id="generate-draft-btn" type="button" class="absolute top-1/2 right-2 -translate-y-1/2 bg-gold text-navy px-3 py-1 rounded-md font-bold text-xs whitespace-nowrap flex items-center hover:bg-yellow-500 transition-colors">
-                                    <span id="btn-text">Generate Draft</span>
-                                    <span id="loader" class="hidden w-4 h-4 border-2 border-dashed rounded-full animate-spin border-navy"></span>
-                                </button>
-                            </div>
-                             <p class="text-slate text-xs mt-2 text-left">e.g., "luxury watch e-commerce", "new app branding"</p>
-                        </div>
-                    </div>
-                    <!-- End Gemini AI Assistant -->
-
-                    <div class="flex flex-wrap -mx-3 mb-6">
-                        <div class="w-full px-3">
-                            <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="message">Aapka Message</label>
-                            <textarea class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold h-48 resize-none" id="message" name="message" placeholder="Aapka project kya hai? AI assistant ka upyog karke draft banayein ya yahan type karein." required></textarea>
-                        </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <button class="btn" type="submit">Send Inquiry</button>
-                    </div>
-                </form>
+                <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="email">Email Address</label>
+                    <input class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold" id="email" name="email" type="email" placeholder="email@example.com" required>
+                </div>
             </div>
-        </section>
-    </main>
-
-          <!-- Floating Message Icon -->
+            <!-- Row 2: Project Keywords & Message (side by side on desktop, stacked on mobile) -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <!-- Gemini AI Assistant Project Keywords -->
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 flex flex-col">
+                    <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="ai-keywords">
+                        ✨ AI Project Assistant
+                    </label>
+                    <div class="relative">
+                        <input class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold" id="ai-keywords" type="text" placeholder="Project keywords...">
+                        <button id="generate-draft-btn" type="button" class="absolute top-1/2 right-2 -translate-y-1/2 bg-gold text-navy px-3 py-1 rounded-md font-bold text-xs whitespace-nowrap flex items-center hover:bg-yellow-500 transition-colors">
+                            <span id="btn-text">Generate</span>
+                            <span id="loader" class="hidden w-4 h-4 border-2 border-dashed rounded-full animate-spin border-navy"></span>
+                        </button>
+                    </div>
+                    <p class="text-slate text-xs mt-2 text-left">
+                        e.g., "luxury watch e-commerce", "new app branding"
+                    </p>
+                </div>
+                <!-- Message -->
+                <div class="w-full md:w-1/2 px-3 flex flex-col">
+                    <label class="block uppercase tracking-wide text-light-slate text-xs font-bold mb-2" for="message">Message</label>
+                    <textarea class="appearance-none block w-full bg-slate/10 text-light-slate border border-slate/30 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-slate/20 focus:border-gold h-48 resize-none" id="message" name="message" placeholder="What is your project? Use AI assistant to make a project draft." required></textarea>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="btn" type="submit">Send Inquiry</button>
+            </div>
+        </form>
+    </div>
+</section>
+        
+        <!-- Floating Message Icon -->
     <a href="https://wa.me/919369553542" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 z-30 w-16 h-16 bg-gold rounded-full flex items-center justify-center shadow-lg animate-bounce-vertical">
         <span class="text-3xl">💬</span>
     </a>
